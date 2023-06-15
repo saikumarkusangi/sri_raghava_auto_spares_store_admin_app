@@ -55,14 +55,14 @@ class LoginPage extends StatelessWidget {
           CustomTextFiled(
               hintText: 'Enter user name',
               controller: userNameController,
-              isPass: false),
+             ),
           const SizedBox(
             height: 10,
           ),
           CustomTextFiled(
               hintText: 'Enter password',
               controller: passwordController,
-              isPass: true),
+             ),
           const SizedBox(
             height: 30,
           ),

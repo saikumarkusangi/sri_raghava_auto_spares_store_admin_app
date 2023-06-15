@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:manage_store/themes/colors.dart';
 
 class OffersPage extends StatelessWidget {
   const OffersPage({super.key});
@@ -6,10 +7,16 @@ class OffersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
      print('offers page');
-    return  Scaffold(
-      body: SingleChildScrollView(
+    return   Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: primaryColor,
+        automaticallyImplyLeading: false,
+        title: const Text('Offers'),
+      ),
+      body: const SingleChildScrollView(
         child: Column(
-          children:const [
+          children:[
           Center(child: Text('offers'),)
           ],
         ),

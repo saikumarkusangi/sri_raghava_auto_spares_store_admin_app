@@ -1,13 +1,11 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:manage_store/themes/colors.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class Chart extends StatelessWidget {
   Chart({super.key});
 
-  List<OrdersData> data = [
+  final List<OrdersData> data = [
     OrdersData('Jan', 12),
     OrdersData('Feb', 6),
     OrdersData('Mar', 32),
